@@ -35,6 +35,18 @@ public class Customer
 
     private String phone;
 
+    @Transient
+    public boolean hasvalueforopeningamt = false;
+
+    @Transient
+    public boolean hasvalueforreceiveamt = false;
+
+    @Transient
+    public boolean hasvalueforpaymentamt = false;
+
+    @Transient
+    public boolean hasvalueforoutstandingamt = false;
+
     @ManyToOne
     @JoinColumn(name = "agentcode",
         nullable = false)
