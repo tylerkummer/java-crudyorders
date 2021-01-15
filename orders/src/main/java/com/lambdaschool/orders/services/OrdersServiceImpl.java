@@ -12,9 +12,6 @@ import org.springframework.transaction.annotation.Transactional;
 import javax.persistence.EntityNotFoundException;
 import java.util.List;
 
-/**
- * Implements the OrdersService Interface.
- */
 @Transactional
 @Service(value = "ordersService")
 public class OrdersServiceImpl

@@ -14,29 +14,17 @@ import javax.persistence.EntityNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Implements the CustomersService Interface.
- */
 @Transactional
 @Service(value = "customersService")
 public class CustomersServiceImpl
     implements CustomersService
 {
-    /**
-     * Connects this service to the customers table.
-     */
     @Autowired
     private CustomersRepository custrepos;
 
-    /**
-     * Connects this service to the payments table.
-     */
     @Autowired
     private PaymentRepository paymentrepos;
 
-    /**
-     * Connects this service to the agents table.
-     */
     @Autowired
     private AgentsRepository agentsrepos;
 
